@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Navbar from './components/Navbar';
+import VideoGrid from './components/VideoGrid';
 
-const App = () => {
-    return <h1>Hello from React inside Laravel! 🚀</h1>;
-};
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <VideoGrid />
+    </div>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('app'));
 root.render(<App />);
